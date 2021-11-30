@@ -1,8 +1,8 @@
 # REACT CONCEPTS
 
-### Don’t touch the Dom I’ll do it for you
+### Don’t touch the Dom I’ll do it for you Declartive approach
 
-React is based upon the principle of not touching the Dom directly. React does all changes to Dom on its own.
+React is based upon the principle of not touching the Dom directly. React does all changes to Dom on its own. React is a Declarative paradigm. Instead of directly telling our app what to do we simply give it components and states that are built with JSX and these components receive properties which are props. We give all that information a giant javascript object in a declarative way. which creates a virtual Dom and that Virtual Dom is used by React library to update the Dom for us.
 
 ### Build website like Lego Design
 
@@ -17,3 +17,11 @@ In react a state is always owned by one component. Any change made by this state
 ### I am just a UI library the rest is up to you
 
 React is just a UI library. It gives you all the necessary tools to build what you want. It follows same approach among devices. One can build apps for mobile, desktops, terminals and AR apps with the same concept. It is up to us what we build form this.
+
+# Become a Great React Developer
+
+### Decide on components
+
+### Decide the state and where is lives
+
+### What changes when state changes
