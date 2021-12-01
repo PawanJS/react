@@ -22,6 +22,12 @@ React is just a UI library. It gives you all the necessary tools to build what y
 
 ### Decide on components
 
-### Decide the state and where is lives
+Decide on which component to make and how to randers them properly. Decide how much a component should be broken down further. How do we build these reusable piece of components. Decide on how to breakdown the app into different components.
+
+### Decide the state and where it lives
+
+Decide where to place the state in out App. How to use it properly in virtual DOM. Placing state in a appropriate component is a crucial decision.
 
 ### What changes when state changes
+
+Based on this javascript object called state is changed we have to decide what to rerender. Based on this state which part of our DOM is need to rerender.
