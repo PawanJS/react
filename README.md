@@ -1,6 +1,6 @@
 # REACT CONCEPTS
 
-### Don’t touch the Dom I’ll do it for you Declartive approach
+### Don’t touch the Dom I’ll do it for you Declarative approach
 
 React is based upon the principle of not touching the Dom directly. React does all changes to Dom on its own. React is a Declarative paradigm. Instead of directly telling our app what to do we simply give it components and states that are built with JSX and these components receive properties which are props. We give all that information a giant javascript object in a declarative way. which creates a virtual Dom and that Virtual Dom is used by React library to update the Dom for us.
 
@@ -31,3 +31,13 @@ Decide where to place the state in out App. How to use it properly in virtual DO
 ### What changes when state changes
 
 Based on this javascript object called state is changed we have to decide what to rerender. Based on this state which part of our DOM is need to rerender.
+
+# React Basics
+
+### Create React app
+
+-create App
+
+```sh
+npx create-react-app monster-rolodex
+```
