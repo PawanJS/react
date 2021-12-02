@@ -41,3 +41,26 @@ Based on this javascript object called state is changed we have to decide what t
 ```sh
 npx create-react-app monster-rolodex
 ```
+
+#### index.js
+
+index.js is the entry point in react application. It uses React and React DOM to render elements. It includes the App.js file which have all the relevant components inside it.
+
+#### react-scripts start
+
+When we run start its just taking out app code and pushing it through our local port 3000 and our browser is accessing it directly. It is not accessing any internet at all.
+It's all local so it is incredibly fast. If we want anybody to access it then we need to leverage the internet.
+
+#### react-scripts build
+
+When we run build it create a optimized build of our code in the build folder. It removes all of our comments and extra spaces. It complies all of our related javascript in a optimized and fastest version that can be sent over internet.
+
+#### react-scripts test
+
+The test script test the app for if it is working properly or not. Create react app includes some test codes inside app.test.js and setupTest.js which help in testing our code functionality.
+
+### react-scripts eject
+
+The React code in build command is compiled using the powers of Babel and webpack. These two helps in building a optimized version of code of our app. They have configuration settings that can be tweaked to get optimized result. Most of our browser does not understand this funky looking React syntax. So Babel compile them into legacy code that every browser can easily understand. Webpack builds chunks for JS files so that our code is divided into small modules. If a user is accessing homepage JS related to that is sent to his browser. This will help in better performance.
+
+Facebook has done a very good job in optimizing Babel and webpack configuration. So most of time we don't need to run eject script.
