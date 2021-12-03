@@ -64,3 +64,9 @@ The test script test the app for if it is working properly or not. Create react 
 The React code in build command is compiled using the powers of Babel and webpack. These two helps in building a optimized version of code of our app. They have configuration settings that can be tweaked to get optimized result. Most of our browser does not understand this funky looking React syntax. So Babel compile them into legacy code that every browser can easily understand. Webpack builds chunks for JS files so that our code is divided into small modules. If a user is accessing homepage JS related to that is sent to his browser. This will help in better performance.
 
 Facebook has done a very good job in optimizing Babel and webpack configuration. So most of time we don't need to run eject script.
+
+### Life Cycle Methods
+
+Life cycle methods are is they are essentially methods that get called at different stages of when this component get rendered.
+
+These are Mounting, Updating and Unmounting.
