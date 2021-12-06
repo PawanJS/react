@@ -93,17 +93,17 @@ Props are read only components. It is an object which stores the value of attrib
   </tr>
 
   <tr>
-    <td>**1.**</td>
+    <td><strong>1.</strong></td>
     <td>Props are read-only.</td>
     <td>State changes can be asynchronous.</td>
   </tr>
   <tr>
-    <td>**2.**</td>
+    <td><strong>2.</strong></td>
     <td>Props are immutable.</td>
     <td>State is mutable.</td>
   </tr>
   <tr>
-    <td>**3.**</td>
+    <td><strong>3.</strong></td>
     <td>
       Props allow you to pass data from one component to other components as an
       argument.
@@ -112,29 +112,29 @@ Props are read only components. It is an object which stores the value of attrib
   </tr>
   <tr>
     4.
-    <td>**4.**</td>
+    <td><strong>4.</strong></td>
     <td>Props can be accessed by the child component.</td>
     <td>State cannot be accessed by child components.</td>
   </tr>
   <tr>
-    <td>**5.**</td>
+    <td><strong>5.</strong></td>
     <td>Props are used to communicate between components.</td>
     <td>
       States can be used for rendering dynamic changes with the component.
     </td>
   </tr>
   <tr>
-    <td>**6.**</td>
+    <td><strong>6.</strong></td>
     <td>Stateless component can have Props.</td>
     <td>Stateless components cannot have State.</td>
   </tr>
   <tr>
-    <td>**7.**</td>
+    <td><strong>7.</strong></td>
     <td>Props make components reusable.</td>
     <td>State cannot make components reusable.</td>
   </tr>
   <tr>
-    <td>**8.**</td>
+    <td><strong>8.</strong</td>
     <td>
       Props are external and controlled by whatever renders the component.
     </td>
