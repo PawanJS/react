@@ -86,6 +86,7 @@ Props are read only components. It is an object which stores the value of attrib
 ### Difference between State and Props
 
 | _SN_ | _Props_ | _State_ |
+| \_\_\_\_ | \_**\_ | \_\_** |
 | 1. | Props are read-only. | State changes can be asynchronous. |
 
 | 2. | Props are immutable. | State is mutable. |
@@ -99,3 +100,5 @@ Props are read only components. It is an object which stores the value of attrib
 ##### The below table will guide you about the changing in props and state.
 
 ##### The component State and Props share some common similarities. They are given in the below table.
+
+### Where to Put State
