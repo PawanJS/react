@@ -85,8 +85,8 @@ Props are read only components. It is an object which stores the value of attrib
 
 ### Difference between State and Props
 
+<table>
 | _SN_ | _Props_ | _State_ |
-| \_\_\_\_ | \_**\_ | \_\_** |
 | 1. | Props are read-only. | State changes can be asynchronous. |
 
 | 2. | Props are immutable. | State is mutable. |
@@ -96,6 +96,8 @@ Props are read only components. It is an object which stores the value of attrib
 | 6. | Stateless component can have Props. | Stateless components cannot have State. |
 | 7. | Props make components reusable. | State cannot make components reusable. |
 | 8. | Props are external and controlled by whatever renders the component. | The State is internal and controlled by the React Component itself. |
+
+</table>
 
 ##### The below table will guide you about the changing in props and state.
 
