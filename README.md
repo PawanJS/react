@@ -87,11 +87,10 @@ Props are read only components. It is an object which stores the value of attrib
 
 <table>
   <tr>
-    <th>**SN**</th>
-    <th>**Props**</th>
-    <th>**State**</th>
+    <th>SN</th>
+    <th>Props</th>
+    <th>State</th>
   </tr>
-
   <tr>
     <td><strong>1.</strong></td>
     <td>Props are read-only.</td>
