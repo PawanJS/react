@@ -86,23 +86,64 @@ Props are read only components. It is an object which stores the value of attrib
 ### Difference between State and Props
 
 <table>
-<th>
-| _SN_ |</th> <th> _Props_ |</th> <th> _State_ |
-| 1. | Props are read-only. | State changes can be asynchronous. |
-</th>
+  <tr>
+    <th>**SN**</th>
+    <th>**Props**</th>
+    <th>**State**</th>
+  </tr>
 
-| 2. | Props are immutable. | State is mutable. |
-| 3. | Props allow you to pass data from one component to other components as an argument. | State holds information about the components. |
-| 4. | Props can be accessed by the child component. | State cannot be accessed by child components. |
-| 5. | Props are used to communicate between components. | States can be used for rendering dynamic changes with the component. |
-| 6. | Stateless component can have Props. | Stateless components cannot have State. |
-| 7. | Props make components reusable. | State cannot make components reusable. |
-| 8. | Props are external and controlled by whatever renders the component. | The State is internal and controlled by the React Component itself. |
-
+  <tr>
+    <td>**1.**</td>
+    <td>Props are read-only.</td>
+    <td>State changes can be asynchronous.</td>
+  </tr>
+  <tr>
+    <td>**2.**</td>
+    <td>Props are immutable.</td>
+    <td>State is mutable.</td>
+  </tr>
+  <tr>
+    <td>**3.**</td>
+    <td>
+      Props allow you to pass data from one component to other components as an
+      argument.
+    </td>
+    <td>State holds information about the components.</td>
+  </tr>
+  <tr>
+    4.
+    <td>**4.**</td>
+    <td>Props can be accessed by the child component.</td>
+    <td>State cannot be accessed by child components.</td>
+  </tr>
+  <tr>
+    <td>**5.**</td>
+    <td>Props are used to communicate between components.</td>
+    <td>
+      States can be used for rendering dynamic changes with the component.
+    </td>
+  </tr>
+  <tr>
+    <td>**6.**</td>
+    <td>Stateless component can have Props.</td>
+    <td>Stateless components cannot have State.</td>
+  </tr>
+  <tr>
+    <td>**7.**</td>
+    <td>Props make components reusable.</td>
+    <td>State cannot make components reusable.</td>
+  </tr>
+  <tr>
+    <td>**8.**</td>
+    <td>
+      Props are external and controlled by whatever renders the component.
+    </td>
+    <td>The State is internal and controlled by the React Component itself.</td>
+  </tr>
 </table>
 
-##### The below table will guide you about the changing in props and state.
+#### The below table will guide you about the changing in props and state.
 
-##### The component State and Props share some common similarities. They are given in the below table.
+#### The component State and Props share some common similarities. They are given in the below table.
 
-### Where to Put State
+#### Where to put state
