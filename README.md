@@ -70,3 +70,32 @@ Facebook has done a very good job in optimizing Babel and webpack configuration.
 Life cycle methods are is they are essentially methods that get called at different stages of when this component get rendered.
 
 These are Mounting, Updating and Unmounting.
+
+### Class Components
+
+### Functional Component
+
+### State
+
+The state is an updatable structure that is used to contain data of information about the component and can change over time. The change in state can happen as a response to user actions or system events. It is the heart of react component which determine the behavior of the component and how it will render. A state must be kept as simple as possible. It represents the component's local state and information. It can only be accessed or modified inside the component or by the component directly.
+
+### Props
+
+Props are read only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. It allows passing data from one component to another components. It is similar to function arguments and can be passed to the component the same way as arguments passed in the function. Props are immutable so we cannot modify the props from inside of the component.
+
+### Difference between State and Props
+
+| _SN_ | _Props_ | _State_ |
+| 1. | Props are read-only. | State changes can be asynchronous. |
+
+| 2. | Props are immutable. | State is mutable. |
+| 3. | Props allow you to pass data from one component to other components as an argument. | State holds information about the components. |
+| 4. | Props can be accessed by the child component. | State cannot be accessed by child components. |
+| 5. | Props are used to communicate between components. | States can be used for rendering dynamic changes with the component. |
+| 6. | Stateless component can have Props. | Stateless components cannot have State. |
+| 7. | Props make components reusable. | State cannot make components reusable. |
+| 8. | Props are external and controlled by whatever renders the component. | The State is internal and controlled by the React Component itself. |
+
+##### The below table will guide you about the changing in props and state.
+
+##### The component State and Props share some common similarities. They are given in the below table.
