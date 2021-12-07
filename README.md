@@ -73,7 +73,36 @@ These are Mounting, Updating and Unmounting.
 
 ### Class Components
 
+Class components are more complex than functional components. It requires you to extend from React. Component and create a render function which returns a React element. You can pass data from one class to other class components. You can create a class by defining a class that extends Component and has a render function.
+
+-class component
+
+```sh
+class MyComponent extends React.Component {
+ render() {
+ return (
+ <div>This is main component.</div>
+ );
+ }
+}
+
+```
+
+The class component is also known as a stateful component because they can hold or manage local state.
+
 ### Functional Component
+
+In React, function components are a way to write components that only contain a render method and don't have their own state. They are simply JavaScript functions that may or may not receive data as parameters. We can create a function that takes props(properties) as input and returns what should be rendered.
+
+-functional component
+
+```sh
+function WelcomeMessage(props) {
+ return <h1>Welcome to the , {props.name}</h1>;
+}
+```
+
+The functional component is also known as a stateless component because they do not hold or manage state.
 
 ### State
 
@@ -143,6 +172,81 @@ Props are read only components. It is an object which stores the value of attrib
 
 #### The below table will guide you about the changing in props and state.
 
+<table>
+<tbody>
+<tr>
+<th>SN</th>
+<th>Condition</th>
+<th>Props</th>
+<th>State</th>
+</tr>
+<tr>
+<td><strong>1.</strong></td>
+<td>Can get initial value from parent Component?</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>2.</strong></td>
+<td>Can be changed by parent Component?</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td><strong>3.</strong></td>
+<td>Can set default values inside Component?</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>4.</strong></td>
+<td>Can change inside Component?</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>5.</strong></td>
+<td>Can set initial value for child Components?</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><strong>6.</strong></td>
+<td>Can change in child Components?</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+
 #### The component State and Props share some common similarities. They are given in the below table.
 
+<table>
+<tbody>
+<tr>
+<th>SN</th>
+<th>State and Props</th>
+</tr>
+<tr>
+<td><strong>1.</strong></td>
+<td>Both are plain JS object.</td>
+</tr>
+<tr>
+<td><strong>2.</strong></td>
+<td>Both can contain default values.</td>
+</tr>
+<tr>
+<td><strong>3.</strong></td>
+<td>Both are read-only when they are using by this.</td>
+</tr>
+</tbody>
+</table>
+
 #### Where to put state
+
+we want to place the state in a place where it gives us access to whatever needs it.
+pay attention that you want to decide as a react developer what changes, what events
+that the user's take, how far up it goes to let the state know.
+
+And you want to move the state in a high enough position so that we are still able to pass down that information to different nodes, but at the same time. If we had, let's say, a state in here that the only people that care about it is two components.
+Well, if that's the case, there's no point bringing up the state all the way up.
