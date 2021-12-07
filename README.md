@@ -39,7 +39,7 @@ Based on this javascript object called state is changed we have to decide what t
 -create App
 
 ```sh
-npx create-react-app monster-rolodex
+npx create-react-app Cats_Paradise
 ```
 
 #### index.js
