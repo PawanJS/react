@@ -21,8 +21,8 @@ class App extends React.Component {
       .then((users) => this.setState({ monsters: users }));
   }
 
-  handleChange = (e) => {
-    this.setState({ searchField: e.target.value });
+  onSearchChange = (event) => {
+    this.setState({ searchField: event.target.value });
   };
 
   render() {
@@ -36,7 +36,7 @@ class App extends React.Component {
         <h1>Cats Paradise</h1>
         <SearchBox
           placeholder="Search Cute Cats"
-          handleChange={this.handleChange}
+          onSearchChange={this.onSearchChange}
         />
         <CardList monsters={filteredMonsters} />
       </div>

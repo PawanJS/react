@@ -242,7 +242,7 @@ Props are read only components. It is an object which stores the value of attrib
 </tbody>
 </table>
 
-#### Where to put state
+#### Where to put state ?
 
 we want to place the state in a place where it gives us access to whatever needs it.
 pay attention that you want to decide as a react developer what changes, what events
