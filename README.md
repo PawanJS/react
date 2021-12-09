@@ -250,3 +250,13 @@ that the user's take, how far up it goes to let the state know.
 
 And you want to move the state in a high enough position so that we are still able to pass down that information to different nodes, but at the same time. If we had, let's say, a state in here that the only people that care about it is two components.
 Well, if that's the case, there's no point bringing up the state all the way up.
+
+#### When to use function instead o f object in setState to update state?
+
+If you know you’re going to use setState to update your component and you know you’re going to need the current state or the current props of your component to calculate the next state, passing in a function as the first parameter of this.setState instead of an object is the recommended solution is to use a function.
+
+#### Types of lifecycle methods
+
+This Diagram explain this topic very effectively
+
+[See lifecycle methods](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
