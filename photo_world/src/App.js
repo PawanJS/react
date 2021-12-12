@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { client_id } from './Private/dont-open';
-
 import './App.css';
 
 class App extends React.Component {
@@ -17,7 +15,7 @@ class App extends React.Component {
   handleSubmit = (event) => {
     event.preventDefault();
     fetch(
-      `https://api.unsplash.com/search/photos?query=${this.state.query}&orientation=squarish&client_id=${client_id}`
+      `https://api.unsplash.com/search/photos?query=${this.state.query}&orientation=squarish&client_id=${process.env.REACT_APP_API_KEY}`
     )
       .then((response) => response.json())
       .then((data) => {
