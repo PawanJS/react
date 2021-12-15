@@ -3,14 +3,10 @@ import { useNavigate } from 'react-router-dom';
 
 import './menu-item.styles.scss';
 
-export const Menuitem = ({ title, id, imageUrl, size, linkUrl }) => {
+export const Menuitem = ({ title, imageUrl, size, linkUrl }) => {
   const navigateTo = useNavigate();
   return (
-    <div
-      className={`${size} menu-item`}
-      key={id}
-      onClick={() => navigateTo(linkUrl)}
-    >
+    <div className={`${size} menu-item`} onClick={() => navigateTo(linkUrl)}>
       <div
         style={{ backgroundImage: `url(${imageUrl})` }}
         className="background-image"
