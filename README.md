@@ -262,3 +262,5 @@ This Diagram explain this topic very effectively
 [See lifecycle methods](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/)
 
 ### User Authentication With Firebase
+
+Import firebase into project with NPM
