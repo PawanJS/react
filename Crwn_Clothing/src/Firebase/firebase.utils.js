@@ -1,6 +1,6 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
+import { getFirestore, doc, getFoc } from 'firebase/firestore';
 
 const config = {
   apiKey: 'AIzaSyBU0_rp0C32aZrywjCfwyny956TQGKyRbs',
@@ -9,6 +9,31 @@ const config = {
   storageBucket: 'new-crwn-db-e2b27.appspot.com',
   messagingSenderId: '187500477575',
   appId: '1:187500477575:web:66c41239d3b0a3af6bcc22',
+};
+
+export const createUserProfileDocument = async (userAuth, additionalData) => {
+  if (!userAuth) return;
+
+  const userRef = doc(db, 'users', `${userAuth.uid}`);
+
+  const snapShot = await userRef.get();
+
+  if (!snapShot.exists) {
+    const { displayName, email } = userAuth;
+    const createdAt = new Date();
+    try {
+      await userRef.set({
+        displayName,
+        email,
+        createdAt,
+        ...additionalData,
+      });
+    } catch (error) {
+      console.log('error creating user', error.message);
+    }
+  }
+
+  return userRef;
 };
 
 initializeApp(config);
