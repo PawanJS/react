@@ -13,14 +13,17 @@ const config = {
 
 initializeApp(config);
 
+const app = initializeApp(config);
+const db = getFirestore(app);
+
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if (!userAuth) return;
 
-  const userRef = doc(firestore, 'users', userAuth.uid);
+  const userRef = doc(db, `users/${userAuth.uid}`);
 
   const snapShot = await getDoc(userRef);
 
-  if (!snapShot.exists) {
+  if (!snapShot.exists()) {
     const { displayName, email } = userAuth;
     const createdAt = new Date();
     try {
@@ -35,7 +38,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
     }
   }
 
-  return snapShot;
+  return userRef;
 };
 
 export const auth = getAuth();
