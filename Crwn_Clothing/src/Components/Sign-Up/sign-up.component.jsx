@@ -1,4 +1,5 @@
 import React from 'react';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 import FormInput from '../Form-Input/form-input.component';
 import CustomButton from '../Custom-Button/custom-button.component';
@@ -29,7 +30,8 @@ class SignUp extends React.Component {
     }
 
     try {
-      const { user } = await auth.createUserWithEmailAndPassword(
+      const { user } = await createUserWithEmailAndPassword(
+        auth,
         email,
         password
       );

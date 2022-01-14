@@ -7,7 +7,7 @@ import './sign-in-and-sign-up.styles.scss';
 
 const SignInAndSignUpPage = () => {
   return (
-    <div>
+    <div className="sign-in-and-sign-up">
       <SignIn />
       <SignUp />
     </div>
